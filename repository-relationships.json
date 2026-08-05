@@ -1,10 +1,825 @@
 {
+  "$schema": "./repository-relationships.schema.json",
+  "audience": "public",
+  "generated": {
+    "complete_for_visibility": "public",
+    "generated_at": "2026-08-05T21:07:32Z",
+    "generator_version": "2026-08-04.1",
+    "inventory_digest": "sha256:31cfa3a634a1646bfd315f94b60c90f3733423c8ba18d6eb690c2f4f0f878486",
+    "managed_by": "ore-repository-relationship-rollout",
+    "omitted_repository_count": 1,
+    "private_repositories_omitted": true,
+    "source": "GitHub GraphQL repository inventory plus reviewed manual declarations"
+  },
+  "owner": {
+    "account_type": "organization",
+    "dotgithub_repository": "unreal-unity-poc/.github",
+    "github_id": "311178336",
+    "linear_project": {
+      "id": "0f1defae-bf32-43b0-8288-ab21ee8e7f23",
+      "name": "github.com/unreal-unity-poc",
+      "team_id": "eb8ab169-5afe-4b6f-9cab-3f2aa3e887dc",
+      "url": "https://linear.app/denman/project/githubcomunreal-unity-poc-687af0c16406",
+      "workspace": "denman"
+    },
+    "login": "unreal-unity-poc",
+    "mapping_id": "context:unreal-unity-poc"
+  },
+  "private_registry": {
+    "contains_non_public_inventory": true,
+    "digest": "sha256:c61ed6fead4d177fb4966ca663fcea94e69e90c0f681609ab8916db9a11f9e4a",
+    "path": "owners/unreal-unity-poc.json",
+    "repository": "ORESoftware/project-registry"
+  },
+  "relationships": [
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:86b5f819265dff2225776ac100835567ca636248b259e18a96e7b2fd908b85b1",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/bevy",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:0dd6752bfcaaaa65589dd7bfa10898171ecfabf970b9c1f31a8bb1d582564a41",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/browserffi",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:9dc493e7487b94ad7edefa7a1ac805bb88630ec9ea00227a38cb5d46f438c52b",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/cef",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:ef4c1dd9b643725cb7dcf0ad732a7d738551f6bf762b5ca3b0abbb92b5b34c23",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/cocos2d-x",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:eb4fb257bd4328f8ae79c1b80896b3e987f08638946ff7a87e42f090b2cd29cb",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/cryengine",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:752295e87106fa2399977b69cc96fee2879f1d6b66549066011bfcee393ff103",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/defold",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:4c11aef2cb29d7b0427daaebfabb4ae440cad39bc7c9a0dc92b54ff5ae101b7e",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/dioxus",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:9d4755850fb1a0ac260df687d21067ff666997519a847bedd300e0b8b8ba9a3d",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/electron-abi",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:697d2fdf889b1d34b41651922abf82c7b4777275f10e06db97fd15f673858811",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/electron-wasm",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:d81fedac2559664fc7f964a23ab9a0fadf7d192dfd0b3e572de88ba9f8605e04",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/flax",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:324fca25cb63dc902c84af80f6fe86d9bd91f06ef0586aaf525fc0bd13cae657",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/godot",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:580c051b6b7170fcb5af5aa8c6304fb969974b7e100ef12360924d41c2fbbe1a",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/leptos",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:4135ecdf0a559b65ad3f206bb869213add72b40c938fe51661d58680a833db1f",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/monogame",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:46b313b1655b8e324c75ff9825f38989adbc1dc1f43abef208428d79d16efbfb",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/o3de",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:bcdb0388872d313f52b4d32fa999440def283f68abfed1100eeb815e94374539",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/qt",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:d3567861e1ed005502d2bb9c35f3dda7d048d0849ff3999d667e4e4e7bce3843",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/rust-engine",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:acd617f6f7d6be1a9853abdd1951872923422ff6e9c0107ddb3ca66c245ffd6d",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/stride",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:990edea9948175e73425f2a20505df52f36d4c3091725e33d4f625e18a7198fc",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/tauri",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:0d54989c489cd649b861d996eb58233d28eea3c3aa50cdc960a9bae6940aa957",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/unity",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:3e8d1e495271403f4c88071257a91fed004368b1a6d34bd81d68d30840b11dd6",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/unreal",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:359c7aeb8d1c42f6ada25f98037806f293bdab54853bfb28f09b45beb904f781",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/unreal-unity-monorepo",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:2f0b17e6ca33d618cc51f09baf060ceb4daf9ec205745bb2934fae3d93c62b84",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/v8-blink",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:f2e4a568c4f331944d08871b78d2805adfd595cf0bc12ffa05b8490c862a8338",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/wasm",
+      "type": "governs"
+    },
+    {
+      "confidence": 1.0,
+      "evidence": [
+        {
+          "kind": "github-owner-membership",
+          "source": "GitHub GraphQL repository inventory"
+        }
+      ],
+      "from": "unreal-unity-poc/.github",
+      "id": "sha256:544a9e7ca1b189acef7b3995184ea9874b2269f9583bc40ac742735739aef47d",
+      "notes": "Organization .github policy and community-health defaults govern this sibling repository.",
+      "required": true,
+      "scope": "organization",
+      "status": "declared",
+      "to": "unreal-unity-poc/webview2",
+      "type": "governs"
+    }
+  ],
+  "repositories": [
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/.github",
+      "github_id": "1324048765",
+      "name": ".github",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "community-health",
+        "governance",
+        "relationship-registry"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/.github",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/bevy",
+      "github_id": "1317686793",
+      "name": "bevy",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/bevy",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/browserffi",
+      "github_id": "1317686831",
+      "name": "browserffi",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/browserffi",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/cef",
+      "github_id": "1317686889",
+      "name": "cef",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/cef",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/cocos2d-x",
+      "github_id": "1317686938",
+      "name": "cocos2d-x",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/cocos2d-x",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/cryengine",
+      "github_id": "1317686988",
+      "name": "cryengine",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/cryengine",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/defold",
+      "github_id": "1317687050",
+      "name": "defold",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/defold",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/dioxus",
+      "github_id": "1317687094",
+      "name": "dioxus",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/dioxus",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/electron-abi",
+      "github_id": "1317687146",
+      "name": "electron-abi",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/electron-abi",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/electron-wasm",
+      "github_id": "1317687230",
+      "name": "electron-wasm",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/electron-wasm",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/flax",
+      "github_id": "1317687326",
+      "name": "flax",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/flax",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/godot",
+      "github_id": "1317687369",
+      "name": "godot",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/godot",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/leptos",
+      "github_id": "1317687418",
+      "name": "leptos",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/leptos",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/monogame",
+      "github_id": "1317687472",
+      "name": "monogame",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/monogame",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/o3de",
+      "github_id": "1317687530",
+      "name": "o3de",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/o3de",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/qt",
+      "github_id": "1317687581",
+      "name": "qt",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/qt",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/rust-engine",
+      "github_id": "1317687668",
+      "name": "rust-engine",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/rust-engine",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/stride",
+      "github_id": "1317687705",
+      "name": "stride",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/stride",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/tauri",
+      "github_id": "1317687766",
+      "name": "tauri",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/tauri",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/unity",
+      "github_id": "1317687868",
+      "name": "unity",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/unity",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/unreal",
+      "github_id": "1317688132",
+      "name": "unreal",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/unreal",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/unreal-unity-monorepo",
+      "github_id": "1317797925",
+      "name": "unreal-unity-monorepo",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "monorepo"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/unreal-unity-monorepo",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/v8-blink",
+      "github_id": "1317688184",
+      "name": "v8-blink",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/v8-blink",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/wasm",
+      "github_id": "1317688231",
+      "name": "wasm",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/wasm",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/webview2",
+      "github_id": "1317688320",
+      "name": "webview2",
+      "owner": "unreal-unity-poc",
+      "roles": [
+        "repository"
+      ],
+      "source": "github-graphql-api",
+      "url": "https://github.com/unreal-unity-poc/webview2",
+      "visibility": "public"
+    }
+  ],
   "schema_version": 1,
-  "organization": "unreal-unity-poc",
-  "generated_at": null,
-  "repositories": [],
-  "notes": [
-    "Populate from live GitHub inventory; do not infer unverified dependencies.",
-    "Repository-local manifests remain authoritative for exact dependency versions."
-  ]
+  "unresolved_hints": []
 }
