@@ -29,7 +29,7 @@
     "contains_non_public_inventory": true,
     "digest": "sha256:c61ed6fead4d177fb4966ca663fcea94e69e90c0f681609ab8916db9a11f9e4a",
     "path": "owners/unreal-unity-poc.json",
-    "repository": "ORESoftware/project-registry"
+    "repository": "approved-private-registry"
   },
   "relationships": [
     {
