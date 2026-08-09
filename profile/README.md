@@ -23,9 +23,12 @@ GitHub owns code and delivery evidence; Linear owns planning and dependencies. T
 <!-- org-project-routing:end -->
 
 <!-- ore-org-baseline:begin -->
-This GitHub account maintains software, infrastructure, research, and supporting documentation under the [`unreal-unity-poc`](https://github.com/unreal-unity-poc) GitHub owner.
+## Planning and governance
 
-Planning and delivery context is tracked in [github.com/unreal-unity-poc](https://linear.app/denman/project/githubcomunreal-unity-poc-687af0c16406). Public contribution, security, and governance defaults are maintained in [`.github`](https://github.com/unreal-unity-poc/.github).
+- Canonical Linear project: https://linear.app/denman/project/githubcomunreal-unity-poc-687af0c16406
+- Organization defaults: https://github.com/unreal-unity-poc/.github
+- Canonical agent policy: https://github.com/unreal-unity-poc/.github/blob/main/agents.md
+- Security policy: https://github.com/unreal-unity-poc/.github/security/policy
 
-Repository descriptions and repository-local documentation remain authoritative for each project. Do not infer production readiness, support commitments, or security guarantees from this profile alone.
+Repositories in this organization use semantic conflict resolution with 3–10 relevant prior commits when useful, full cross-repository context, pull-request delivery, and a hard automated-agent denylist for destructive or history-rewriting operations.
 <!-- ore-org-baseline:end -->
