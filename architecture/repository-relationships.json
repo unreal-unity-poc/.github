@@ -1,0 +1,686 @@
+{
+  "$schema": "./repository-relationships.schema.json",
+  "composition_policy": {
+    "dual_managed_invariant": "gitlink SHA must equal the source commit in the Zed lock entry",
+    "editable_source_composition": "git-submodules",
+    "package_and_artifact_resolution": "zed-pkg",
+    "production_deployment_resolution": "immutable OCI image digest or signed artifact",
+    "production_source_checkout": "forbidden as a runtime deployment mechanism"
+  },
+  "inventory_scope": "public-repositories-plus-role-contracts",
+  "observability_policy": {
+    "logs": "structured output with trace_id/span_id correlation",
+    "metrics": "Prometheus-compatible bounded-cardinality metrics",
+    "required_resource_attributes": [
+      "service.name",
+      "service.namespace",
+      "service.version",
+      "deployment.environment",
+      "vcs.ref.head.revision"
+    ],
+    "traces": "OpenTelemetry with W3C trace context"
+  },
+  "organization": "unreal-unity-poc",
+  "privacy": {
+    "private_repository_count": 1,
+    "private_repository_names_published": false,
+    "public_repository_names_published": true,
+    "reason": "The public .github registry intentionally withholds private repository names and edges."
+  },
+  "registry_repository": "unreal-unity-poc/.github",
+  "relationships": [
+    {
+      "from": "organization://unreal-unity-poc",
+      "kind": "packaged_via",
+      "rationale": "Zed resolves artifacts while submodules compose editable source",
+      "source_basis": "platform-policy",
+      "status": "platform-default",
+      "to": "platform://zed-pkg"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/bevy"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/browserffi"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/cef"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/cocos2d-x"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/cryengine"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/defold"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/dioxus"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/electron-abi"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/electron-wasm"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/flax"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/godot"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/leptos"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/monogame"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/o3de"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/qt"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/rust-engine"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/stride"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/tauri"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/unity"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/unreal"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/unreal-unity-monorepo"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/v8-blink"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/wasm"
+    },
+    {
+      "from": "unreal-unity-poc/.github",
+      "kind": "governs",
+      "rationale": "organization defaults, safety, and relationship declarations",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/webview2"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/bevy"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/browserffi"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/cef"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/cocos2d-x"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/cryengine"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/defold"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/dioxus"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/electron-abi"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/electron-wasm"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/flax"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/godot"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/leptos"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/monogame"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/o3de"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/qt"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/rust-engine"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/stride"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/tauri"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/unity"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/unreal"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/v8-blink"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/wasm"
+    },
+    {
+      "from": "unreal-unity-poc/unreal-unity-monorepo",
+      "kind": "composes",
+      "rationale": "development workspace and release bill of materials",
+      "source_basis": "role-convention",
+      "status": "inferred",
+      "to": "unreal-unity-poc/webview2"
+    }
+  ],
+  "repositories": [
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/.github",
+      "lifecycle": "active",
+      "name": ".github",
+      "role": "organization_governance",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/unreal-unity-monorepo",
+      "lifecycle": "active",
+      "name": "unreal-unity-monorepo",
+      "role": "composition_workspace",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/bevy",
+      "lifecycle": "active",
+      "name": "bevy",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/browserffi",
+      "lifecycle": "active",
+      "name": "browserffi",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/cef",
+      "lifecycle": "active",
+      "name": "cef",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/cocos2d-x",
+      "lifecycle": "active",
+      "name": "cocos2d-x",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/cryengine",
+      "lifecycle": "active",
+      "name": "cryengine",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/defold",
+      "lifecycle": "active",
+      "name": "defold",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/dioxus",
+      "lifecycle": "active",
+      "name": "dioxus",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/electron-abi",
+      "lifecycle": "active",
+      "name": "electron-abi",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/electron-wasm",
+      "lifecycle": "active",
+      "name": "electron-wasm",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/flax",
+      "lifecycle": "active",
+      "name": "flax",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/godot",
+      "lifecycle": "active",
+      "name": "godot",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/leptos",
+      "lifecycle": "active",
+      "name": "leptos",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/monogame",
+      "lifecycle": "active",
+      "name": "monogame",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/o3de",
+      "lifecycle": "active",
+      "name": "o3de",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/qt",
+      "lifecycle": "active",
+      "name": "qt",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/rust-engine",
+      "lifecycle": "active",
+      "name": "rust-engine",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/stride",
+      "lifecycle": "active",
+      "name": "stride",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/tauri",
+      "lifecycle": "active",
+      "name": "tauri",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/unity",
+      "lifecycle": "active",
+      "name": "unity",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/unreal",
+      "lifecycle": "active",
+      "name": "unreal",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/v8-blink",
+      "lifecycle": "active",
+      "name": "v8-blink",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/wasm",
+      "lifecycle": "active",
+      "name": "wasm",
+      "role": "uncategorized",
+      "visibility": "public"
+    },
+    {
+      "archived": false,
+      "default_branch": "main",
+      "fork": false,
+      "full_name": "unreal-unity-poc/webview2",
+      "lifecycle": "active",
+      "name": "webview2",
+      "role": "uncategorized",
+      "visibility": "public"
+    }
+  ],
+  "role_contracts": {
+    "api_service": "Owns public APIs, webhooks, authorization, validation, and orchestration.",
+    "client_sdk": "Depends on interfaces and exposes generated clients plus thin wrappers.",
+    "composition_workspace": "Composes source repositories and records the release BOM.",
+    "end_to_end_tests": "Runs black-box compatibility and user-flow checks.",
+    "infrastructure": "Owns product cloud resources; promotion remains GitOps-controlled.",
+    "interfaces": "Own OpenAPI, events, JSON Schema, compatibility fixtures, and DTO inputs.",
+    "mcp_server": "Calls product SDKs/APIs; no parallel domain persistence.",
+    "sync_service": "Owns product conflict policy/adapters and wraps Opto reconciliation.",
+    "web_bff": "Owns browser sessions, CSRF, HTML/SSR, and calls the product API."
+  },
+  "schema_version": "1.0.0",
+  "service_boundary_policy": {
+    "cross_service_database_access": "forbidden-by-default",
+    "mcp_database_access": "forbidden-by-default; MCP calls the product API/SDK",
+    "preferred_cross_service_calls": "typed API/SDK, event, or owned replicated read model"
+  }
+}
